@@ -71,7 +71,7 @@ summarylength = 25
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "We are a clean, organic, sugaring studio providing a comfortable and pleasant experience"
+    heading               = "We are a clean, organic, sugaring studio providing a pleasant and comfortable experience"
     tagline               = ""
     primary_button        = "See Our Works"
     primary_button_url    = "services"
