@@ -28,8 +28,8 @@ summarylength = 25
     url     = "contact"
     weight  = 5
   [[menu.nav]]
-    name    = "Book Now"
-    url     = "contact"
+    name    = "BookNow"
+    url     = "BookNow"
     weight  = 6
 
 # Site Params
@@ -63,7 +63,7 @@ summarylength = 25
   # Navbar Action Button
   [params.navAction]
     status  = true
-    name    = "Book Now"
+    name    = "BookNow"
     url     = "contact"
 
 
