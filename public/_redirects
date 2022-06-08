@@ -1,4 +1,4 @@
-https://sugarstage.netlify.app/* https://example.com/:splat 301!
-http://sugarstage.netlify.app/*  https://example.com/:splat 301!
+<!-- https://sugarstage.netlify.app/* https://example.com/:splat 301!
+http://sugarstage.netlify.app/*  https://example.com/:splat 301! -->
 https://staging--sugarstage.netlify.app/* https://example.com/:splat 301!
 http://staging--sugarstage.netlify.app/*  https://example.com/:splat 301!
