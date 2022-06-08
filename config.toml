@@ -24,7 +24,7 @@ summarylength = 25
     url     = "blog"
     weight  = 4
   [[menu.nav]]
-    name    = "Get in touch"
+    name    = "Book Now"
     url     = "contact"
     weight  = 5
 
@@ -59,19 +59,20 @@ summarylength = 25
   # Navbar Action Button
   [params.navAction]
     status  = true
-    name    = "Get in touch"
+    name    = "Book Now"
     url     = "contact"
 
 
   # Banner Section
+#   We’re a Clean and Organic Sugaring Studio That Provides a Pleasant and Comfortable Experience in a Clean and Comfortable Environment
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "We’re a Design Studio That Belies In the Great Ideas"
-    tagline               = "WE WORK HARD, WE PLAY HARD"
-    primary_button        = "See Our Works"
+    heading               = "We're a clean, organic, sugaring studio providing a pleasant & comfortable experience"
+    tagline               = ""
+    primary_button        = "Do’s & Dont’s"
     primary_button_url    = "services"
-    secondary_button      = "Connect with Us"
+    secondary_button      = "Book Appt"
     secondary_button_url  = "contact"
 
   [params.services]
@@ -82,10 +83,10 @@ summarylength = 25
   [params.call_to_action]
     enable              = true
     background_image    = "images/backgrounds/cta-background.jpg"
-    title               = "LET’S WORK TOGETHER"
-    primary_button      = "Submit Query"
+    title               = "WHAT IS SUGARING?"
+    primary_button      = "FAQ’S"
     primary_button_url  = "contact"
-    secondary_button    = "Not Convinced"
+    secondary_button    = "Book Now"
     secondary_button_url = "services"
 
   [params.footer]
