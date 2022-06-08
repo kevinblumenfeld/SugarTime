@@ -1,4 +1,4 @@
-baseURL       = "https://629ffd703c3f740007e84d44--sugarstage.netlify.app/"
+baseURL       = "https://sugarstage.netlify.app/"
 languageCode  = "en-us"
 title         = "Roxo | Creative Design Agency"
 theme         = "roxo"
