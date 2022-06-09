@@ -1,14 +1,15 @@
 enable : true
-heading : "THE PROOF IS IN THE PUDDING!"
-counter_item: 
-  - title: "Happy Clients"
-    number: "250"
+heading : "WHAT IS SUGARING?"
+# subheading : "Sugaring is a form of hair removal that resembles waxing but is gentler on the skin and is all-natural"
+counter_item:
+  - title: "100% Natural, biodegradable & water soluble"
+    number: ""
 
-  - title: "Projects Completed"
-    number: "100"
+  - title: "Applied at body temperature and will not burn the skin"
+    number: ""
 
-  - title: "Cups of coffee"
-    number: "350"
+  - title: "Does not adhere to live skin cells and less likely to cause ingrown hairs"
+    number: ""
 
-  - title: "Telephone Talks"
-    number: "775"
+  - title: "Skin feels smooth and comfortable"
+    number: ""
