@@ -1,6 +1,6 @@
 baseURL       = "https://sugarstage.netlify.app/"
 languageCode  = "en-us"
-title         = "Roxo | Creative Design Agency"
+title         = "Sugar Time Waxing Studio"
 theme         = "roxo"
 summarylength = 25
 
@@ -33,8 +33,8 @@ summarylength = 25
   logo = "images/logo.png"
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
-  author = "StaticMania"
+  description = "Sugar Time Waxing Studio"
+  author = "Sugat Time"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
   # We're using formspree.io for form handling, paste your formspree url below
@@ -68,7 +68,7 @@ summarylength = 25
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "We're a clean, organic, sugaring studio providing a pleasant & comfortable experience"
+    heading               = "A clean, organic, hair removal studio providing a pleasant & comfortable experience"
     tagline               = ""
     primary_button        = "Do’s & Dont’s"
     primary_button_url    = "services"
