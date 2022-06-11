@@ -20,7 +20,7 @@ summarylength = 25
     url     = "services"
     weight  = 3
   [[menu.nav]]
-    name    = "Blog"
+    name    = "FAQ's"
     url     = "blog"
     weight  = 4
   [[menu.nav]]
@@ -89,7 +89,7 @@ summarylength = 25
     background_image    = "images/backgrounds/cta-background.jpg"
     title               = ""
     primary_button      = "FAQ’S"
-    primary_button_url  = "contact"
+    primary_button_url  = "blog"
     secondary_button    = "Book Now"
     secondary_button_url = "services"
 
