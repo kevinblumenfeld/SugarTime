@@ -5,18 +5,27 @@
         <div class="row justify-content-center">
             <div class="section-title">
                 <h2 style="margin-bottom: 35px;">{{ .title }}</h2>
-                <p style="font-weight: bold; margin-bottom: 5px;">{{ .faq1 }}</p>
-                <p style="margin-bottom: 25px;">{{ .faq2 }}</p>
-                <p style="font-weight: bold; margin-bottom: 5px;">{{ .faq1 }}</p>
-                <p style="margin-bottom: 25px;">{{ .faq2 }}</p>
-                <p style="font-weight: bold; margin-bottom: 5px;">{{ .faq1 }}</p>
-                <p style="margin-bottom: 25px;">{{ .faq2 }}</p>
-                <p style="font-weight: bold; margin-bottom: 5px;">{{ .faq1 }}</p>
-                <p style="margin-bottom: 25px;">{{ .faq2 }}</p>
-                <p style="font-weight: bold; margin-bottom: 5px;">{{ .faq1 }}</p>
-                <p style="margin-bottom: 25px;">{{ .faq2 }}</p>
-                <p style="font-weight: bold; margin-bottom: 5px;">{{ .faq1 }}</p>
-                <p style="margin-bottom: 25px;">{{ .faq2 }}</p>
+                <style>
+                    p.question {
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    p.answer {
+                        margin-bottom: 25px;
+                    }
+                </style>
+                <p class="question">{{ .faq1 }}</p>
+                <p class="answer">{{ .faq2 }}</p>
+                <p class="question">{{ .faq1 }}</p>
+                <p class="answer">{{ .faq2 }}</p>
+                <p class="question">{{ .faq1 }}</p>
+                <p class="answer">{{ .faq2 }}</p>
+                <p class="question">{{ .faq1 }}</p>
+                <p class="answer">{{ .faq2 }}</p>
+                <p class="question">{{ .faq1 }}</p>
+                <p class="answer">{{ .faq2 }}</p>
+                <p class="question">{{ .faq1 }}</p>
+                <p class="answer">{{ .faq2 }}</p>
             </div>
         </div>
     </div>
