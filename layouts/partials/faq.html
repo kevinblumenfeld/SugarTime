@@ -1,0 +1,94 @@
+{{ with .Site.Params.services }}
+{{ if .enable }}
+{{ "<!-- Site Hero Start -->" | safeHTML }}
+<section class="site-hero" style="background-image: url('/images/backgrounds/pink_painted_wall.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <div class="site-hero-content text-center">
+                <!-- <br></br>
+                <br></br> -->
+                <!-- <img width="auto" height="auto" src="{{ "images/logo_black_20_percent.png" | absURL }}"> -->
+                <style>
+                    .faqtitle {
+                        font-weight: lighter;
+                        /* margin-left: 100px;
+                        margin-right: 100px; */
+                        margin-bottom: 40px;
+                        text-align: left;
+                        align-items: center;
+                    }
+
+                    .q1 {
+                        /* margin-left: 100px;
+                        margin-right: 100px; */
+                        margin-bottom: 20px;
+                        align-items: center;
+                        text-align: left;
+                    }
+
+                    .a1 {
+                        font-weight: lighter;
+                        margin-bottom: 20px;
+                        /* margin-left: 100px;
+                        margin-right: 100px; */
+                        align-items: center;
+                        text-align: left;
+                    }
+
+                    .faqdiv {
+                        display: flex;
+                        /* align-items: center; */
+                        /* height: 450px; */
+                        flex-direction: column;
+                        padding-left: 10%;
+                        padding-top: 10%;
+                        /* justify-content: center; optional */
+                        /* width: 480px; */
+                        text-align: left;
+                    }
+                </style>
+                <div class="faqdiv">
+                    <h3 class="faqtitle">{{ .title }}</h3>
+                    <h4 class="q1">{{ .q1 }}</h4>
+                    <h5 class="a1">{{ .a1 }}</h5>
+                    <h4 class="q1">{{ .q1 }}</h4>
+                    <h5 class="a1">{{ .a1 }}</h5>
+                    <h4 class="q1">{{ .q1 }}</h4>
+                    <h5 class="a1">{{ .a1 }}</h5>
+                    <h4 class="q1">{{ .q1 }}</h4>
+                    <h5 class="a1">{{ .a1 }}</h5>
+                    <h4 class="q1">{{ .q1 }}</h4>
+                    <h5 class="a1">{{ .a1 }}</h5>
+                    <ul class="site-hero-content-buttons">
+                        <!-- <li>
+                            <a href="{{ .primary_button_url | absURL }}" class="btn btn-secondary">
+                                <span class="btn-area">
+                                    <span data-text="{{ .primary_button }}">
+                                        {{ .primary_button }}
+                                    </span>
+                                </span>
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="{{ .secondary_button_url | absURL }}" class="btn btn-primary">
+                                <span class="btn-area">
+                                    <span data-text="{{ .secondary_button }}">
+                                        {{ .secondary_button }}
+                                    </span>
+                                </span>
+                            </a>
+                        </li> -->
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="#counter" class="site-hero-scroll scroll-to">
+        <img src="images/arrow-down.svg" alt="arrow-down">
+    </a> -->
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}
