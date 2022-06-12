@@ -2,14 +2,15 @@
 {{ with .Site.Params.services }} {{ if .enable }}
 <style>
     .faqbg {
-        background-image: url(/images/backgrounds/pink-tong.jpg);
-        position: relative;
-        /* height: 100vh; */
-        background-size: cover;
+        /* background-image: url(/images/backgrounds/pink-tong.jpg);
+        position: relative; */
+
+        /* background-size: cover;
         background-position: center center;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
+        background-color: #f6bebf;
     }
 </style>
 <section class="site-blog-header faqbg">
@@ -19,11 +20,13 @@
                 <h2 style="margin-bottom: 35px;">{{ .title }}</h2>
                 <style>
                     p.question {
+                        color: black;
                         font-weight: bold;
                         margin-bottom: 5px;
                     }
 
                     p.answer {
+                        color: black;
                         margin-bottom: 25px;
                     }
                 </style>
