@@ -6,27 +6,27 @@ summarylength = 25
 
 # Site Menus
 [menu]
-  # Navbar Menus
-  [[menu.nav]]
-    name    = "Home"
-    url     = ""
-    weight  = 1
-  [[menu.nav]]
-    name    = "About"
-    url     = "about"
-    weight  = 2
-  [[menu.nav]]
-    name    = "Services"
-    url     = "services"
-    weight  = 3
-  [[menu.nav]]
-    name    = "FAQ's"
-    url     = "faq"
-    weight  = 4
-  [[menu.nav]]
-    name    = "Book Now"
-    url     = "contact"
-    weight  = 5
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "Home"
+        url     = ""
+        weight  = 1
+    [[menu.nav]]
+        name    = "About"
+        url     = "about"
+        weight  = 2
+    [[menu.nav]]
+        name    = "Services"
+        url     = "services"
+        weight  = 3
+    [[menu.nav]]
+        name    = "FAQ's"
+        url     = "faq"
+        weight  = 4
+    [[menu.nav]]
+        name    = "Book Now"
+        url     = "contact"
+        weight  = 5
 
 # Site Params
 [params]
@@ -62,9 +62,6 @@ summarylength = 25
     name    = "Book Now"
     url     = "contact"
 
-
-  # Banner Section
-#   We’re a Clean and Organic Sugaring Studio That Provides a Pleasant and Comfortable Experience in a Clean and Comfortable Environment
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/hero-background.jpg"
@@ -81,8 +78,6 @@ summarylength = 25
     subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
     faq1  = "How often should I get a Brazilian?"
     faq2  = "We recommend visiting our studio once every four weeks. Your skin will be less sensitive if you get sugared or waxed regularly."
-
-
 
   [params.call_to_action]
     enable              = true
