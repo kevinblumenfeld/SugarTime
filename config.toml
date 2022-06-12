@@ -74,6 +74,7 @@ summarylength = 25
 
   [params.services]
     enable    = true
+    background_image    = "images/backgrounds/hero-background.jpg"
     title     = "FREQUENTLY ASKED QUESTIONS"
     subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
     faq1  = "How often should I get a Brazilian?"
