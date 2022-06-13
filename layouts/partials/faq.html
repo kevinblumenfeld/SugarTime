@@ -1,25 +1,52 @@
 {{ with .Site.Params.Services }}
 {{ if .enable }}
 {{ "<!-- Site Hero Start -->" | safeHTML }}
-<section class="site-hero" style="background-image: url('/images/backgrounds/pink-tong.jpg');">
+<section class="site-hero" style="background-image: url('/images/backgrounds/pink-tong.jpg');height: fit-content;">
     <div class="container" style="vertical-align: top;">
         <div class="row">
             <div class="col-lg-10 mx-auto text-center">
-                <br></br>
-                <br></br>
-                <!-- <img width="auto" height="auto" src="{{ "images/logo_black_20_percent.png" | absURL }}"> -->
+                <style>
+                    p.faqtitle{
+                        font-size: 25px;
+                        font-family: montserrat, sans-serif;
+                        font-weight: 600;
+                        color: #00113e;
+                        text-align: left;
+                        margin-left: 200px;
+                        padding-top: 20%;
+
+                    }
+                    p.q{
+                        font-size: 20px;
+                        font-family: montserrat, sans-serif;
+                        font-weight: 600;
+                        color: #00113e;
+                        text-align: left;
+                        margin-left: 200px;
+                        margin-bottom: .14px;
+                    }
+                    p.a{
+                        font-size: 16px;
+                        font-family: montserrat, sans-serif;
+                        font-weight: 400;
+                        color: #00113e;
+                        text-align: left;
+                        margin-left: 200px;
+                        margin-bottom: 19px;
+                    }
+                </style>
                 <div class="site-hero-content text-center">
-                    <h3 class="faqtitle">{{ .title }}</h3>
-                    <h4 class="q1">{{ .q1 }}</h4>
-                    <h5 class="a1">{{ .a1 }}</h5>
-                    <h4 class="q1">{{ .q1 }}</h4>
-                    <h5 class="a1">{{ .a1 }}</h5>
-                    <h4 class="q1">{{ .q1 }}</h4>
-                    <h5 class="a1">{{ .a1 }}</h5>
-                    <h4 class="q1">{{ .q1 }}</h4>
-                    <h5 class="a1">{{ .a1 }}</h5>
-                    <h4 class="q1">{{ .q1 }}</h4>
-                    <h5 class="a1">{{ .a1 }}</h5>
+                    <p class="faqtitle">{{ .title }}</p>
+                    <p class="q">{{ .q1 }}</p>
+                    <p class="a">{{ .a1 }}</p>
+                    <p class="q">{{ .q1 }}</p>
+                    <p class="a">{{ .a1 }}</p>
+                    <p class="q">{{ .q1 }}</p>
+                    <p class="a">{{ .a1 }}</p>
+                    <p class="q">{{ .q1 }}</p>
+                    <p class="a">{{ .a1 }}</p>
+                    <p class="q">{{ .q1 }}</p>
+                    <p class="a">{{ .a1 }}</p>
                 </div>
             </div>
         </div>
