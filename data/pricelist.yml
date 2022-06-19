@@ -1,0 +1,72 @@
+enable : true
+heading : "WHAT IS SUGARING?"
+# subheading : "Sugaring is a form of hair removal that resembles waxing but is gentler on the skin and is all-natural"
+pricelist:
+  - service: "Brazilian Sugar"
+    price: "$50"
+
+  - service: "Bikini Sugar"
+    price: "$40"
+
+  - service: "Eyebrows Sugar"
+    price: "$20"
+
+  - service: "Lip Sugar"
+    price: "$10"
+
+  - service: "Chin Sugar"
+    price: "$15"
+
+  - service: "Full Face Sugar"
+    price: "$35"
+
+  - service: "Sideburns Sugar"
+    price: "$15"
+
+  - service: "Neck Sugar"
+    price: "$20"
+
+  - service: "Underarm Sugar"
+    price: "$20"
+
+  - service: "Half Arms Sugar"
+    price: "$40"
+
+  - service: "Full Arms Sugar"
+    price: "$60"
+
+  - service: "Inner Thigh Sugar"
+    price: "$20"
+
+  - service: "Half Legs Sugar"
+    price: "$80"
+
+  - service: "Full Legs Sugar"
+    price: "$120"
+
+  - service: "Chest Sugar"
+    price: "$25"
+
+  - service: "Nipples Sugar"
+    price: "$10"
+
+  - service: "Stomach Sugar"
+    price: "$30"
+
+  - service: "Happy Trail Sugar"
+    price: "$10"
+
+  - service: "Back Sugar"
+    price: "$45"
+
+  - service: "Buttocks Sugar"
+    price: "$35"
+
+  - service: "Hands Sugar"
+    price: "$12"
+
+  - service: "Feet Sugar"
+    price: "$12"
+
+  - service: "Full Body Sugar"
+    price: "$180"

@@ -1,9 +1,9 @@
 ---
-title: "KIO-TAPE BRAND"
+title: "SUGARING"
 date: 2019-12-23T20:56:42+06:00
 type: services
 image: "images/projects/project-thumb-four.jpg"
-category: ["PRODUCT LABEL"]
+category: ["FOR HER"]
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---
 

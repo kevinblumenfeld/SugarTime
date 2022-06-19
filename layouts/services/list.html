@@ -1,5 +1,54 @@
 {{ define "main" }}
+<style>
+    /* body {
+        background: orange;
+    } */
 
+    /* No other backgrounds are used */
+
+    ul.leaders {
+        padding: 10px;
+
+    }
+
+    ul.leaders li {
+        display: table;
+    }
+
+    ul.leaders li span {
+        display: table-cell;
+    }
+
+    ul.leaders li span:first-child {
+        /* TITLE */
+        position: relative;
+        overflow: hidden;
+        /* Don't go underneath the price */
+    }
+
+    ul.leaders li span:first-child:after {
+        /* DASHES */
+        content: "";
+        position: absolute;
+        bottom: 0.5em;
+        /* Set as you want */
+        margin-left: 0.5em;
+        /* Keep same for the next span's left padding */
+        width: 100%;
+        border-bottom: 1px dashed #000;
+    }
+
+    ul.leaders li span + span {
+        /* PRICE */
+        text-align: right;
+        width: 1%;
+        /* Trick it */
+        vertical-align: bottom;
+        /* Keep Price text bottom-aligned */
+        padding-left: 0.5em;
+        /* white-space: nowrap;       /* Uncomment if needed */
+    }
+</style>
 <section class="site-project-header">
     <div class="container">
         <div class="row align-items-center">
@@ -24,13 +73,23 @@
             {{ range (.Paginator 4).Pages }}
             <div class="col-lg-6 col-md-10 mx-auto">
                 <div class="site-project-item">
-                    <div class="site-project-item-thumb">
-                        <img src="{{ .Params.Image | absURL }}" alt="project-thumb" />
-                    </div>
                     <div class="site-project-item-content">
                         <span>{{ delimit .Params.category ", " }}</span>
                         <h3>{{ .Title }}</h3>
                         <a href="{{ .Permalink }}" class="read-more">view project</a>
+                    </div>
+                    <div class="site-project-item-thumb" style="min-height: 740px;">
+                        <!-- <img src="{{ .Params.Image | absURL }}" alt="project-thumb" /> -->
+                        {{ with .Site.Data.pricelist }}
+                        <ul class="leaders">
+                        {{ range .pricelist }}
+                            <li>
+                                <span>{{ .service }}</span>
+                                <span>{{ .price }}</span>
+                            </li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
                     </div>
                 </div>
             </div>
@@ -44,4 +103,5 @@
     </div>
 </section>
 
-{{ partial "call-to-action.html" . }} {{ end }}
+{{ partial "call-to-action.html" . }}
+{{ end }}

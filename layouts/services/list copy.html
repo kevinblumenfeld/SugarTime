@@ -1,0 +1,225 @@
+{{ define "main" }}
+<!-- <style>
+    .col-md-kevin {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    li.servicelist {
+        font-size: 16px;
+        font-family: montserrat, sans-serif;
+        font-weight: 400;
+        color: #00113e;
+        text-align: left;
+        list-style-type: none;
+                -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+                -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* margin-bottom: 19px; */
+    }
+    ul.servicelist {
+        font-size: 16px;
+        font-family: montserrat, sans-serif;
+        font-weight: 400;
+        color: #00113e;
+        text-align: left;
+        list-style-type: none;
+                -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* margin-bottom: 19px; */
+    }
+
+</style> -->
+<style>
+    /* body {
+        background: orange;
+    } */
+
+    /* No other backgrounds are used */
+
+    ul.leaders {
+        padding: 20px;
+    }
+
+    ul.leaders li {
+        display: table;
+    }
+
+    ul.leaders li span {
+        display: table-cell;
+    }
+
+    ul.leaders li span:first-child {
+        /* TITLE */
+        position: relative;
+        overflow: hidden;
+        /* Don't go underneath the price */
+    }
+
+    ul.leaders li span:first-child:after {
+        /* DASHES */
+        content: "";
+        position: absolute;
+        bottom: 0.5em;
+        /* Set as you want */
+        margin-left: 0.5em;
+        /* Keep same for the next span's left padding */
+        width: 100%;
+        border-bottom: 1px dashed #000;
+    }
+
+    ul.leaders li span+span {
+        /* PRICE */
+        text-align: right;
+        width: 1%;
+        /* Trick it */
+        vertical-align: bottom;
+        /* Keep Price text bottom-aligned */
+        padding-left: 0.5em;
+        /* white-space: nowrap;       /* Uncomment if needed */
+    }
+</style>
+
+<section class="site-project-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="site-project-header-content">
+                    <h1>{{ .Title | safeHTML }}</h1>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <a href="#project" class="site-project-header-action scroll-to">
+                    <span>Scroll Down</span>
+                    <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="site-project site-expertise" id="project">
+    <div class="container">
+        <div class="row">
+            {{ range (.Paginator 4).Pages }}
+            <div class="col-lg-6 col-md-10 mx-auto">
+                <div class="site-project-item">
+                    <div class="site-project-item-content">
+                        <span>{{ delimit .Params.category ", " }}</span>
+                        <h3>{{ .Title }}</h3>
+                        <a href="{{ .Permalink }}" class="read-more">book now</a>
+                    </div>
+
+                </div>
+                <div class="site-project site-expertise site-project-item-thumb">
+                    <ul class="leaders">
+                        <li>
+                            <span>Brazilian Sugar</span>
+                            <span>50</span>
+                        </li>
+                        <li>
+                            <span>Bikini Sugar</span>
+                            <span>40</span>
+                        </li>
+                        <li>
+                            <span>Eyebrows Sugar</span>
+                            <span>20</span>
+                        </li>
+                        <li>
+                            <span>Lip Sugar</span>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <span>Chin Sugar</span>
+                            <span>15</span>
+                        </li>
+                        <li>
+                            <span>Full Face Sugar</span>
+                            <span>35</span>
+                        </li>
+                        <li>
+                            <span>Sideburns Sugar</span>
+                            <span>15</span>
+                        </li>
+                        <li>
+                            <span>Neck Sugar</span>
+                            <span>20</span>
+                        </li>
+                        <li>
+                            <span>Underarm Sugar</span>
+                            <span>20</span>
+                        </li>
+                        <li>
+                            <span>Half Arms Sugar</span>
+                            <span>40</span>
+                        </li>
+                        <li>
+                            <span>Full Arms Sugar</span>
+                            <span>60</span>
+                        </li>
+                        <li>
+                            <span>Inner Thigh Sugar</span>
+                            <span>20</span>
+                        </li>
+                        <li>
+                            <span>Half Legs Sugar</span>
+                            <span>80</span>
+                        </li>
+                        <li>
+                            <span>Full Legs Sugar</span>
+                            <span>120</span>
+                        </li>
+                        <li>
+                            <span>Chest Sugar</span>
+                            <span>25</span>
+                        </li>
+                        <li>
+                            <span>Nipples Sugar</span>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <span>Stomach Sugar</span>
+                            <span>30</span>
+                        </li>
+                        <li>
+                            <span>Happy Trail Sugar</span>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <span>Back Sugar</span>
+                            <span>45</span>
+                        </li>
+                        <li>
+                            <span>Buttocks Sugar</span>
+                            <span>35</span>
+                        </li>
+                        <li>
+                            <span>Hands Sugar</span>
+                            <span>12</span>
+                        </li>
+                        <li>
+                            <span>Feet Sugar</span>
+                            <span>12</span>
+                        </li>
+                        <li>
+                            <span>Full Body Sugar</span>
+                            <span>180</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {{ end }}
+            <div class="col-12">
+                <div class="site-project-pagination">
+                    <!-- {{ template "_internal/pagination.html" . }} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "call-to-action.html" . }} {{ end }}
