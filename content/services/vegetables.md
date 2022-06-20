@@ -1,10 +1,11 @@
 ---
-title: "SEAMLESS WATCH"
-date: 2019-12-23T15:55:44+06:00
+title: "vegetables"
+date: 2019-12-23T15:58:10+06:00
 type: services
-image: "images/projects/project-thumb-three.jpg"
-category: ["REBRAND"]
+image: "images/projects/project-thumb-one.jpg"
+category: ["PICK UP"]
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
+Description: ""
 ---
 
 The “Seamless Watch” watch has all the features that users expect in a digital watch, and some unusual features.
