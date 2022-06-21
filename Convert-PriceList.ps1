@@ -12,6 +12,9 @@ function Convert-PriceList {
                 '  - service: "{0}"' -f $Item.Service
                 '    price: "${0}"{1}' -f $Item.Price, "`r`n"
             }
+            elseif ($Item.Category) {
+                '{0}:' -f $Item.Category
+            }
         }
     }
 }

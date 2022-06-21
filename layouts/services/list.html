@@ -98,19 +98,18 @@
 <section class="site-project" id="project">
     <div class="container">
         <div class="row">
-            {{ range .Pages }}
-
+            {{ range $p := .Pages }}
             <div class="col-lg-6 col-md-10 mx-auto">
                 <div class="site-project-item">
                     <div class="site-project-item-content">
-                        <h3>{{ .Title }}</h3>
-                        {{/*  <span>{{ delimit .Params.category ", " }}</span>
-                        <a href="{{ .Permalink }}" class="read-more">book now</a>  */}}
+                        <h3>{{ .Type }}</h3>
+                        <span>{{ delimit .Params.category ", " }}</span>
+                        <a href="{{ .Permalink }}" class="read-more">book now</a>
                     </div>
                     <div class="site-project-item-thumb">
                         {{ with .Site.Data.pricelist }}
                         <ul class="leaders">
-                            {{ range index . $.Title }}
+                            {{ range index . $p.Title }}
                             <li>
                                 <span>{{ .service }}</span>
                                 <span>{{ .price }}</span>
