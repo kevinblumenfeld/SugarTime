@@ -1,5 +1,6 @@
 ---
-title: "waxing_for_him"
+title: waxing_for_him
+weight: 4
 date: 2019-12-23T15:58:10+06:00
 type: WAXING
 image: "images/projects/project-thumb-one.jpg"
