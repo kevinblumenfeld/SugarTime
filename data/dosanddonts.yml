@@ -1,0 +1,7 @@
+enable : true
+heading : ""
+dos:
+  - service: "Brazilian Sugar"
+
+donts:
+  - service: "Brazilian Wax"
