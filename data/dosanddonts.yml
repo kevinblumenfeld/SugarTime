@@ -2,12 +2,15 @@ enable : true
 heading : ""
 dos:
   - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
-  - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
-  - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
-  - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
+  - service: "Wear lose fitting clothes to your appointments, cotton clothing for maximum comfort"
+  - service: "To minimize pain, take an over the counter pain reliever about 30 minutes prior to your appointment"
+  - service: "Exfoliate and hydrate the area in between appointments"
+  - service: "Keep up with your waxing appointments"
 
 donts:
-  - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
-  - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
-  - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
-  - service: "Make sure your hair is a 1/4 inch long, or two weeks of hair growth for best results"
+  - service: "Do not exfoliate the day before or the day of your appointment"
+  - service: "Do not apply any deodorant or lotions on the areas to be sugared/waxed prior to your appointment"
+  - service: "Minimize caffeine and alcohol intake prior to your appointment"
+  - service: "Do not use products that contain alcohol on the sugared/waxed area"
+  - service: "Do not shave in between your scheduled appointments"
+  - service: "Do not swim, tan, workout, and/or other activities that cause friction on the skin for 24-48 hours after waxing"
