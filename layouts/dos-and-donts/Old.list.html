@@ -1,5 +1,4 @@
-
-{{ "<!-- Site Hero Start -->" | safeHTML }}
+{{ define "main" }}
 <style>
     ul.leaders {
         padding-left: 26px;
@@ -180,38 +179,29 @@
         position: relative;
     }
 </style>
-<section class="site-hero" style="background-image: url('/images/backgrounds/pink-tong.jpg');height: fit-content;min-height: 800px;">
-    <div class="container" style="vertical-align: top;">
+
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="site-project-header-content">
+
+                    {{/* <h1>{{ .Title | safeHTML }}</h1> */}}
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <a href="#project" class="site-project-header-action scroll-to">
+                    <span>Scroll Down</span>
+                    {{/* <img src="{{ " images/arrow-down.svg" | absURL }}" alt="arrow-down"> */}}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="site-dosanddonts">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto text-center">
-                <style>
-                    p.faqtitle{
-                        font-size: 25px;
-                        font-family: montserrat, sans-serif;
-                        font-weight: 600;
-                        color: #00113e;
-                        text-align: center;
-                        /* margin-left: 200px; */
-                    }
-                    p.q{
-                        font-size: 20px;
-                        font-family: montserrat, sans-serif;
-                        font-weight: 600;
-                        color: #00113e;
-                        text-align: left;
-                        /* margin-left: 200px; */
-                        margin-bottom: .14px;
-                    }
-                    p.a{
-                        font-size: 16px;
-                        font-family: montserrat, sans-serif;
-                        font-weight: 400;
-                        color: #00113e;
-                        text-align: left;
-                        /* margin-left: 200px; */
-                        margin-bottom: 19px;
-                    }
-                </style>
             {{ range $p := .Pages }}
             <div class="col-lg-6 col-md-10 mx-auto">
                 <div class="site-project-item">
@@ -234,8 +224,12 @@
                 </div>
             </div>
             {{ end }}
+            <div class="col-12">
             </div>
         </div>
     </div>
+    </div>
 </section>
-{{ "<!-- Site Hero End -->" | safeHTML }}
+
+{{/* {{ partial "call-to-action.html" . }} */}}
+{{ end }}
