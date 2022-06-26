@@ -181,37 +181,8 @@
     }
 </style>
 <section class="site-hero" style="background-image: url('/images/backgrounds/pink-tong.jpg');height: fit-content;min-height: 800px;">
-    <div class="container" style="vertical-align: top;">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto text-center">
-                <style>
-                    p.faqtitle{
-                        font-size: 25px;
-                        font-family: montserrat, sans-serif;
-                        font-weight: 600;
-                        color: #00113e;
-                        text-align: center;
-                        /* margin-left: 200px; */
-                    }
-                    p.q{
-                        font-size: 20px;
-                        font-family: montserrat, sans-serif;
-                        font-weight: 600;
-                        color: #00113e;
-                        text-align: left;
-                        /* margin-left: 200px; */
-                        margin-bottom: .14px;
-                    }
-                    p.a{
-                        font-size: 16px;
-                        font-family: montserrat, sans-serif;
-                        font-weight: 400;
-                        color: #00113e;
-                        text-align: left;
-                        /* margin-left: 200px; */
-                        margin-bottom: 19px;
-                    }
-                </style>
             {{ range $p := .Pages }}
             <div class="col-lg-6 col-md-10 mx-auto">
                 <div class="site-project-item">
@@ -234,8 +205,37 @@
                 </div>
             </div>
             {{ end }}
+            <div class="col-12">
             </div>
         </div>
     </div>
+    </div>
 </section>
+{{/*  <section class="site-hero" style="background-image: url('/images/backgrounds/pink-tong.jpg');height: fit-content;min-height: 800px;">
+    <div class="container" style="vertical-align: top;">
+{{ range $p := .Pages }}
+                    <div class="col-lg-6 col-md-10 mx-auto">
+                        <div class="site-project-item">
+                            <div class="site-project-item-content">
+                                <span>{{ .Type }}</span>
+                                <span>{{ delimit .Params.category ", " }}</span>
+                            </div>
+                            <div class="site-project-item-thumb">
+                                {{ with .Site.Data.dosanddonts }}
+                                <ul class="dos leaders">
+                                    {{ range index . $p.Title }}
+                                    <li>
+                                        <span>{{ .service }}</span>
+                                        <span>{{ .price }}</span>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+
+    </div>
+</section>  */}}
 {{ "<!-- Site Hero End -->" | safeHTML }}
