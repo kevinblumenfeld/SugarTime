@@ -6,7 +6,7 @@ sugaring_for_her:
 
 
 sugaring_for_him:
-  - service: "Pear"
+  - service: "Broccoli"
     price: "$25"
 
 
@@ -15,5 +15,5 @@ waxing_for_her:
     price: "$45"
 
 waxing_for_him:
-  - service: "Lemon"
+  - service: "Radish"
     price: "$20"
