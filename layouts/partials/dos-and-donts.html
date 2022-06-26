@@ -180,7 +180,7 @@
         position: relative;
     }
 </style>
-<section class="site-hero" style="background-image: url('/images/backgrounds/pink-tong.jpg');height: fit-content;min-height: 800px;">
+<section class="site-hero" style="background-image: url('/images/backgrounds/orchid_yellow_sugar.jpg');height: fit-content;min-height: 800px;">
     <div class="container">
         <div class="row">
             {{ range $p := .Pages }}
@@ -190,7 +190,7 @@
                         <span>{{ .Type }}</span>
                         <span>{{ delimit .Params.category ", " }}</span>
                     </div>
-                    <div class="site-project-item-thumb">
+                    <div class="site-project-item-thumb"  style="min-height: 450px;">
                         {{ with .Site.Data.dosanddonts }}
                         <ul class="dos leaders">
                             {{ range index . $p.Title }}
