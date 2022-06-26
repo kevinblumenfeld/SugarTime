@@ -168,6 +168,13 @@
         transform: translateY(0);
         opacity: 1;
     }
+
+    .dos span {
+        font-family: montserrat, sans-serif;
+        color: #00113e;
+        transition: all 0.3s ease;
+        position: relative;
+    }
 </style>
 
 <section>
@@ -201,7 +208,7 @@
                     </div>
                     <div class="site-project-item-thumb">
                         {{ with .Site.Data.dosanddonts }}
-                        <ul class="leaders">
+                        <ul class="dos leaders">
                             {{ range index . $p.Title }}
                             <li>
                                 <span>{{ .service }}</span>
