@@ -52,7 +52,7 @@
     .site-project-item-content,
     .site-blog-post-content {
         position: absolute;
-        background: #eaa4a485;
+        background: #eaa4a4;
         color: #fff;
         width: 100%;
         padding: 45px 50px;
@@ -64,8 +64,9 @@
     .site-project-item-content span,
     .site-blog-post-content span {
         font-family: montserrat, sans-serif;
-        font-size: 1.4em;
-        color: #eaa4a4;
+        font-size: 1.7em;
+        font-weight: 700;
+        color: #fff;
         display: block;
         margin-bottom: 10px;
     }
@@ -84,11 +85,20 @@
             {{ range $p := .Pages }}
             <div class="col-lg-6 col-md-10 mx-auto">
                 <div class="site-project-item">
-                    <div class="site-project-item-content">
+                    {{ if in .Params.category "FOR HER"}}
+                    <div class="site-project-item-content" style="background-color:#eaa4a4c0; border-radius:19px; ">
                         <h3>{{ .Type }}</h3>
                         <span>{{ delimit .Params.category ", " }}</span>
-                        <a href="{{ .Permalink }}" class="read-more">book now</a>
+                        <a href="\contact\" class="read-more">book now</a>
                     </div>
+                    {{end}}
+                    {{ if in .Params.category "FOR HIM"}}
+                    <div class="site-project-item-content" style="background-color: #add6d2; border-radius:19px;">
+                        <h3>{{ .Type }}</h3>
+                        <span>{{ delimit .Params.category ", " }}</span>
+                        <a href="\contact\" class="read-more">book now</a>
+                    </div>
+                    {{end}}
                     <div class="site-project-item-thumb">
                         {{ with .Site.Data.pricelist }}
                         <ul class="leaders">
