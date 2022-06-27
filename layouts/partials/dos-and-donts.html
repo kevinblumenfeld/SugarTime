@@ -1,11 +1,17 @@
 {{ "<!-- Site Hero Start -->" | safeHTML }}
 <style>
     ul.leaders {
-
+        padding-left: 42px;
+        border: 1px solid black;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        text-align: left;
+        vertical-align: top;
     }
 
     ul.leaders li {
-
+        display: list-item;
+        border: 1px solid rgb(44, 213, 103);
         padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 10px;
@@ -17,6 +23,7 @@
 
     ul.leaders li span {
         display: table-cell;
+        border: 1px solid rgb(152, 27, 125);
                 padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 10px;
@@ -26,6 +33,7 @@
 
     ul.leaders li span+span {
         padding-left: 0.5em;
+        border: 2px solid rgb(174, 11, 11);
     }
 
     .site-project-item-content,
@@ -36,7 +44,8 @@
         padding: 5px 5px;
         max-height: 180px;
         top: 0;
-        transition: all 0.3s cubic-bezier(0.36, 0.03, 0, 0.91);
+
+        border: 2px solid rgb(174, 11, 11);
     }
 
     .site-project-item-content span,
@@ -76,7 +85,7 @@
         width: 100%;
         padding: 40px 25px;
         bottom: 0;
-        transition: all 0.3s cubic-bezier(0.36, 0.03, 0, 0.91);
+
     }
 
     @media (max-width: 767px) {
@@ -147,7 +156,7 @@
     .site-blog-post:hover .site-project-item-content,
     .site-blog-post:hover .site-blog-post-content {
         padding-bottom: 75px;
-        border-radius: 19px;
+
     }
 
     .site-project-item:hover .site-project-item-content a,
