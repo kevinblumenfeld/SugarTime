@@ -1,16 +1,20 @@
-
 {{ "<!-- Site Hero Start -->" | safeHTML }}
 <style>
     ul.leaders {
         padding-left: 42px;
         margin-top: 30px;
         padding-bottom: 30px;
+        text-align: left;
+        vertical-align: middle;
     }
 
     ul.leaders li {
 
         display: list-item;
         padding: 5px 10px;
+        text-align: left;
+        vertical-align: middle;
+
     }
 
     ul.leaders li span {
@@ -18,34 +22,8 @@
 
     }
 
-    ul.leaders li span:first-child {
-        /* TITLE */
-        position: relative;
-        overflow: hidden;
-        /* Don't go underneath the price */
-    }
-
-    ul.leaders li span:first-child:after {
-        /* DASHES */
-        content: "";
-        position: absolute;
-        bottom: 0.5em;
-        /* Set as you want */
-        margin-left: 0.5em;
-        /* Keep same for the next span's left padding */
-        width: 100%;
-
-    }
-
     ul.leaders li span+span {
-        /* PRICE */
-        text-align: right;
-        width: 1%;
-        /* Trick it */
-        vertical-align: bottom;
-        /* Keep Price text bottom-aligned */
         padding-left: 0.5em;
-        /* white-space: nowrap;       /* Uncomment if needed */
     }
 
     .site-project-item-content,
@@ -75,7 +53,7 @@
         padding: 70px 0px 0px 0px;
         top: 0;
         min-height: 468px;
-        border-radius:19px;
+        border-radius: 19px;
     }
 
     .site-dosanddonts {
@@ -159,7 +137,7 @@
         box-shadow: 0 30px 45px 0 rgba(0, 0, 0, 0.01),
             0 30px 45px 0 rgba(0, 0, 0, 0.02), 0 30px 45px 0 rgba(0, 0, 0, 0.03),
             0 30px 45px 0 rgba(0, 0, 0, 0.04);
-            border-radius:19px;
+        border-radius: 19px;
     }
 
     .site-project-item:hover .site-project-item-content,
@@ -167,7 +145,7 @@
     .site-blog-post:hover .site-project-item-content,
     .site-blog-post:hover .site-blog-post-content {
         padding-bottom: 75px;
-        border-radius:19px;
+        border-radius: 19px;
     }
 
     .site-project-item:hover .site-project-item-content a,
@@ -176,7 +154,7 @@
     .site-blog-post:hover .site-blog-post-content a {
         transform: translateY(0);
         opacity: 1;
-        border-radius:19px;
+        border-radius: 19px;
     }
 
     .dos span {
@@ -186,7 +164,8 @@
         position: relative;
     }
 </style>
-<section class="site-hero" style="background-image: url('/images/backgrounds/orchid_yellow_sugar.jpg');height: fit-content;min-height: 800px;">
+<section class="site-hero"
+    style="background-image: url('/images/backgrounds/orchid_yellow_sugar.jpg');height: fit-content;min-height: 800px;">
     <div class="container">
         <div class="row">
             {{ range $p := .Pages }}
@@ -217,31 +196,4 @@
     </div>
     </div>
 </section>
-{{/*  <section class="site-hero" style="background-image: url('/images/backgrounds/pink-tong.jpg');height: fit-content;min-height: 800px;">
-    <div class="container" style="vertical-align: top;">
-{{ range $p := .Pages }}
-                    <div class="col-lg-6 col-md-10 mx-auto">
-                        <div class="site-project-item">
-                            <div class="site-project-item-content">
-                                <span>{{ .Type }}</span>
-                                <span>{{ delimit .Params.category ", " }}</span>
-                            </div>
-                            <div class="site-project-item-thumb">
-                                {{ with .Site.Data.dosanddonts }}
-                                <ul class="dos leaders">
-                                    {{ range index . $p.Title }}
-                                    <li>
-                                        <span>{{ .service }}</span>
-                                        <span>{{ .price }}</span>
-                                    </li>
-                                    {{ end }}
-                                </ul>
-                                {{ end }}
-                            </div>
-                        </div>
-                    </div>
-                    {{ end }}
-
-    </div>
-</section>  */}}
 {{ "<!-- Site Hero End -->" | safeHTML }}
