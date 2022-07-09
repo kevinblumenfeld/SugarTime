@@ -16,7 +16,7 @@ sugaring_for_her:
   - service: "Chin Sugar"
     price: "$15"
 
-  - service: "Full Face Sugar (does not incl eyebrows)"
+  - service: "Full Face Sugar (does not include eyebrows)"
     price: "$35"
 
   - service: "Sideburns Sugar"
@@ -171,10 +171,10 @@ waxing_for_her:
   - service: "Feet Wax"
     price: "$10"
 
-  - service: "Full Body Wax (Underarm, Full Leg, Brazilian)"
+  - service: "Full Body Wax (Underarm, Full Leg, & Brazilian)"
     price: "$75"
 
-  - service: "Full Body Wax w/Brazilian Sugar (Underarm, Full Leg, Brazilian)"
+  - service: "Full Body Wax w/Brazilian Sugar  (Underarm, Full Leg, & Brazilian)"
     price: "$85"
 
 waxing_for_him:
