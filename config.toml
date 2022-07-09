@@ -70,7 +70,7 @@ summarylength = 25
     primary_button        = "Do’s & Dont’s"
     primary_button_url    = "dos-and-donts"
     secondary_button      = "Book Appt"
-    secondary_button_url  = "contact"
+    secondary_button_url  = "book"
 
   [params.services]
     enable    = true
@@ -138,7 +138,7 @@ summarylength = 25
           url  = "faq"
         [[params.footer.sitemap.link]]
           name = "Book Now"
-          url  = "contact"
+          url  = "book"
       # Footer Social Media
       [params.footer.social]
         title   = "Social Media"
