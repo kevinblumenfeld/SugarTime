@@ -16,7 +16,7 @@ sugaring_for_her:
   - service: "Chin Sugar"
     price: "$15"
 
-  - service: "Full Face Sugar (does not include eyebrows)"
+  - service: "Full Face Sugar (does not incl eyebrows)"
     price: "$35"
 
   - service: "Sideburns Sugar"
