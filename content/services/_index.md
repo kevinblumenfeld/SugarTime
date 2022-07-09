@@ -1,5 +1,5 @@
 ---
-title: "Waxing, Sugaring and Brazilians Sugar Time"
+title: "Waxing, Sugaring and Brazilians"
 type: "services"
 date: 2019-12-23T16:48:28+06:00
 ---
