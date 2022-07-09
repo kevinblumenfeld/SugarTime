@@ -67,8 +67,7 @@ sugaring_for_her:
   - service: "Feet Sugar"
     price: "$12"
 
-  - service: "Full Body Sugar"
-    servicedetail: "(Underarm, Full Leg and Brazilian)"
+  - service: "Full Body Sugar (Underarm, Full Leg, & Brazilian)"
     price: "$180"
 
 sugaring_for_him:

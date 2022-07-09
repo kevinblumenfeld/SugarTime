@@ -103,22 +103,10 @@
                         {{ with .Site.Data.pricelist }}
                         <ul class="leaders">
                             {{ range index . $p.Title }}
-                            {{ if (in .service "Full Body Sugar")}}
-                            <li>
-                                <span>{{ .service }}</span>
-                            </li>
-                            <li>
-                                <span>{{ .servicedetail }}</span>
-                                <span>{{ .price }}</span>
-                            </li>
-                            {{ end }}
-
-                            {{ if not (in .service "Full Body Sugar")}}
                             <li>
                                 <span>{{ .service }}</span>
                                 <span>{{ .price }}</span>
                             </li>
-                            {{ end }}
                             {{ end }}
                         </ul>
                         {{ end }}
