@@ -1,7 +1,7 @@
 enable : true
 heading : ""
 sugaring_for_her:
-  - service: "Brazilian Sugar"
+  - service: "Brazilian Sugar (includes back strip)"
     price: "$50"
 
   - service: "Bikini Sugar"
@@ -16,7 +16,7 @@ sugaring_for_her:
   - service: "Chin Sugar"
     price: "$15"
 
-  - service: "Full Face Sugar"
+  - service: "Full Face Sugar (does not include eyebrows)"
     price: "$35"
 
   - service: "Sideburns Sugar"
@@ -67,7 +67,7 @@ sugaring_for_her:
   - service: "Feet Sugar"
     price: "$12"
 
-  - service: "Full Body Sugar"
+  - service: "Full Body Sugar (Underarm, Full Leg, and Brazilian)"
     price: "$180"
 
 sugaring_for_him:
@@ -105,7 +105,7 @@ sugaring_for_him:
     price: "$15"
 
 waxing_for_her:
-  - service: "Brazilian Wax"
+  - service: "Brazilian Wax (includes back strip)"
     price: "$45"
 
   - service: "Bikini Wax"
@@ -120,7 +120,7 @@ waxing_for_her:
   - service: "Chin Wax"
     price: "$12"
 
-  - service: "Full Face Wax"
+  - service: "Full Face Wax (does not include eyebrows)"
     price: "$25"
 
   - service: "Sideburns Wax"
@@ -171,10 +171,10 @@ waxing_for_her:
   - service: "Feet Wax"
     price: "$10"
 
-  - service: "Full Body Wax"
+  - service: "Full Body Wax (Underarm, Full Leg, Brazilian)"
     price: "$75"
 
-  - service: "Full Body Wax w/Brazilian Sugar"
+  - service: "Full Body Wax w/Brazilian Sugar (Underarm, Full Leg, Brazilian)"
     price: "$85"
 
 waxing_for_him:
