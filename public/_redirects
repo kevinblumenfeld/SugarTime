@@ -1,0 +1,4 @@
+http://master--sugarsite.netlify.app//* https://example.com/:splat 301!
+https://master--sugarsite.netlify.app//* https://example.com/:splat 301!
+https://sugarsite.netlify.app/* https://example.com/:splat 301!
+http://sugarsite.netlify.app/*  https://example.com/:splsat 301!
