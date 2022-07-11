@@ -1,0 +1,121 @@
+{{ define "main" }}
+<style>
+    /* body {
+        background: orange;
+    } */
+
+    /* No other backgrounds are used */
+
+    ul.leaders {
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    ul.leaders li {
+        display: table;
+    }
+
+    ul.leaders li span {
+        display: table-cell;
+    }
+
+    ul.leaders li span:first-child {
+        /* TITLE */
+        position: relative;
+        overflow: hidden;
+        /* Don't go underneath the price */
+    }
+
+    ul.leaders li span:first-child:after {
+        /* DASHES */
+        content: "";
+        position: absolute;
+        bottom: 0.5em;
+        /* Set as you want */
+        margin-left: 0.5em;
+        /* Keep same for the next span's left padding */
+        width: 100%;
+        border-bottom: 1px dashed #000;
+    }
+
+    ul.leaders li span+span {
+        /* PRICE */
+        text-align: right;
+        width: 1%;
+        /* Trick it */
+        vertical-align: bottom;
+        /* Keep Price text bottom-aligned */
+        padding-left: 0.5em;
+        /* white-space: nowrap;       /* Uncomment if needed */
+    }
+
+    .site-project-item-content,
+    .site-blog-post-content {
+        position: absolute;
+        background: #eaa4a4;
+        color: #fff;
+        width: 100%;
+        padding: 45px 50px;
+        max-height: 180px;
+        top: 0;
+        transition: all 0.3s cubic-bezier(0.36, 0.03, 0, 0.91);
+    }
+
+    .site-project-item-content span,
+    .site-blog-post-content span {
+        font-family: montserrat, sans-serif;
+        font-size: 1.7em;
+        font-weight: 700;
+        color: #fff;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .site-project-item-thumb {
+        width: 100%;
+        max-height: 850px;
+        background: #fdd0e709;
+        padding: 70px 0px 0px 0px;
+        top: 0;
+    }
+</style>
+<section class="site-project" id="project" style="padding-top: 180px;">
+    <div class="container">
+        <div class="row">
+            {{ range $p := .Pages }}
+            <div class="col-lg-6 col-md-10 mx-auto">
+                <div class="site-project-item">
+                    {{ if in .Params.category "FOR HER"}}
+                    <div class="site-project-item-content" style="background-color:#eaa4a4c0; border-radius:19px; ">
+                        <h3>{{ .Type }}</h3>
+                        <span>{{ delimit .Params.category ", " }}</span>
+                        <a href="\book\" class="read-more">book now</a>
+                    </div>
+                    {{end}}
+                    {{ if in .Params.category "FOR HIM"}}
+                    <div class="site-project-item-content" style="background-color: #add6d2; border-radius:19px;">
+                        <h3>{{ .Type }}</h3>
+                        <span>{{ delimit .Params.category ", " }}</span>
+                        <a href="\book\" class="read-more">book now</a>
+                    </div>
+                    {{end}}
+                    <div class="site-project-item-thumb">
+                        {{ with .Site.Data.pricelist }}
+                        <ul class="leaders">
+                            {{ range index . $p.Title }}
+                            <li>
+                                <span>{{ .service }}</span>
+                                <span>{{ .price }}</span>
+                            </li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+</section>
+
+{{ partial "call-to-action.html" . }}
+{{ end }}
