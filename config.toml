@@ -1,4 +1,4 @@
-baseURL       = "https://sugarstage.netlify.app/"
+baseURL       = "https://sugartimewaxing.com/"
 languageCode  = "en-us"
 title         = "SugarTime Waxing Studio"
 theme         = "roxo"
@@ -38,7 +38,7 @@ summarylength = 25
   # Google Analitycs
   googleAnalitycsID = "Your ID"
   # We're using formspree.io for form handling, paste your formspree url below
-  formspreeFormUrl  = "https://formspree.io/myykjpje"
+  formspreeFormUrl  = ""
 
   # Contact Form
   [params.contactForm]
@@ -121,7 +121,7 @@ summarylength = 25
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Contact Info"
-      address = "1655 Mansell Rd<br>Alpharetta, GA 30076"
+      address = "1655 Mansell Rd Suite 226<br>Alpharetta, GA 30076"
       phone   = "404-201-4919"
       email   = "naomi@sugartimewaxing.com"
       # Footer Sitemap
