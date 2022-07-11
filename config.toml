@@ -51,7 +51,7 @@ summarylength = 25
 
     [[params.contactForm.projectType]]
       value = "gd"
-      title  = "Graphics Design"
+      title  = "Esthetician"
     [[params.contactForm.projectType]]
       value = "wd"
       title  = "Web Design"
