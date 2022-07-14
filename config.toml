@@ -24,7 +24,7 @@ summarylength = 25
         url     = "faq"
         weight  = 4
     [[menu.nav]]
-        name    = "Book Now"
+        name    = "Book Appt"
         url     = "book"
         weight  = 5
 
@@ -59,7 +59,7 @@ summarylength = 25
   # Navbar Action Button
   [params.navAction]
     status  = true
-    name    = "Book Now"
+    name    = "Book Appt"
     url     = "book"
 
   [params.banner]
@@ -114,7 +114,7 @@ summarylength = 25
     title               = ""
     primary_button      = "FAQ’S"
     primary_button_url  = "faq"
-    secondary_button    = "Book Now"
+    secondary_button    = "Book Appt"
     secondary_button_url = "services"
 
   [params.footer]
@@ -137,7 +137,7 @@ summarylength = 25
           name = "Faq"
           url  = "faq"
         [[params.footer.sitemap.link]]
-          name = "Book Now"
+          name = "Book Appt"
           url  = "book"
       # Footer Social Media
       [params.footer.social]
