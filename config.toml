@@ -115,7 +115,7 @@ summarylength = 25
     primary_button      = "FAQ’S"
     primary_button_url  = "faq"
     secondary_button    = "Book Appt"
-    secondary_button_url = "services"
+    secondary_button_url = "book"
 
   [params.footer]
     # Footer Contact Info
