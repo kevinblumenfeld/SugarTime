@@ -39,6 +39,7 @@ summarylength = 25
   author = "SugarTime"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
+  gtm = "GTM-NLKVQRF"
   # We're using formspree.io for form handling, paste your formspree url below
   formspreeFormUrl  = ""
 
