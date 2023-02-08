@@ -70,6 +70,7 @@ summarylength = 25
     background_image      = "images/backgrounds/hero-background.jpg"
     heading               = "A clean, organic, hair removal studio providing a pleasant & comfortable experience"
     tagline               = "❤️ Valentine's Day Special ❤️"
+    belowtagline          = "20% off when you book a Brazilian!"
     primary_button        = "Do’s & Dont’s"
     primary_button_url    = "dos-and-donts"
     secondary_button      = "Book Appt"
