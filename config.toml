@@ -71,6 +71,7 @@ summarylength = 25
     heading               = "A clean, organic, hair removal studio providing a pleasant & comfortable experience"
     tagline               = "❤️ Valentine's Day Special ❤️"
     belowtagline          = "20% off when you book a Brazilian!"
+    subbelowtagline       = "Valid 2/10-2/14"
     primary_button        = "Do’s & Dont’s"
     primary_button_url    = "dos-and-donts"
     secondary_button      = "Book Appt"
