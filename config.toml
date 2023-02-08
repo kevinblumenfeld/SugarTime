@@ -1,5 +1,5 @@
 googleAnalytics = 'G-R4B9P2SPHJ'
-enableEmoji = 'true'
+enableEmoji = true
 
 baseURL       = "https://sugartimewaxing.com/"
 languageCode  = "en-us"
